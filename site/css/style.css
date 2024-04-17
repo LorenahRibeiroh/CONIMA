@@ -1,5 +1,5 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
     color: black;
     background-color: rgb(245, 246, 248);
     margin: 4vh;
@@ -18,6 +18,7 @@ header{
 article{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 article h2, h1{
@@ -40,28 +41,80 @@ article h2, h1{
 /*Main Calendar*/
 .calendarcontainer{
     background-color: antiquewhite;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    
 }
 .datacontainer{
     display: flex;
     justify-content: space-evenly;
+    width: 312px;
+    height: 110px;
+    align-items: center;
+    
     
 }
 .datacontainer div {
-    display: flex;
-    flex-direction: column;
-    line-height: 0%;
-    background-color: #DD660A;
-    width: 68px;
-    align-items: center;
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    background-color: #EF9A36; 
+    width: 64px;
+    height: 64px;
 }
-.datacontainer div p{
-    font-size: 2vh;
-    font-weight: 400;
+
+.datacontainer div:hover{
+    position: relative;
+    transition: 0.5s ease-out;
+    background-color: #DD660A;
+    width: 95px;
+    height: 95px;
+    font-size: 1.4em;
 }
 .datacontainer div h1{
-    font-size: 2.5vh;
-    font-weight: 400;
+    font-size: 1.2em;
+    color: white;
 }
+.datacontainer div h2{
+    font-size: 1em;
+    font-weight: 400;
+    
+}
+#d20{
+    background-color: #EF9A36;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#d21{
+    background-color: #EF9A36;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#d22{
+    background-color: #EF9A36;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#d20 .dark, #d21 .dark, #d22 .dark{
+    width:300px;
+    background-color: #DD660A;
+    border-bottom: solid 1px black ;
+    border-top: solid 1px black;
+}
+
 /*Botões*/
 #participante, #ouvinte, #programacao{
     background-color: #EF9A36;
