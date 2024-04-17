@@ -1,0 +1,56 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: rgb(245, 246, 248);
+    margin: 4vh;
+    font-size: 14px;
+}
+/*cabeçalho*/
+header{
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.3;
+}
+.letterorange{
+    color: #DD660A;
+}
+article{
+    display: flex;
+    flex-direction: column;
+
+}
+article h2, h1{
+    font-size: 20px;
+}
+
+/*Main*/
+.banner{
+    width: 310px;
+    height: 110px;
+    background-color: #88085B;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#participante, #ouvinte{
+    background-color: #EF9A36;
+    border-style: none;
+    width: fit-content;
+    padding: 1.3vh;
+    border-radius: 7px;
+}
+
+/*Display PC*/
+@media (max-with: 360px) {
+   
+    p {
+        
+        font-size: 14px;
+    }
+}
