@@ -14,6 +14,7 @@ header{
 .letterorange{
     color: #DD660A;
 }
+/*Main submission e listener*/
 article{
     display: flex;
     flex-direction: column;
@@ -22,8 +23,6 @@ article{
 article h2, h1{
     font-size: 20px;
 }
-
-/*Main*/
 .banner{
     width: 310px;
     height: 110px;
@@ -38,7 +37,33 @@ article h2, h1{
     flex-direction: column;
     align-items: center;
 }
-#participante, #ouvinte{
+/*Main Calendar*/
+.calendarcontainer{
+    background-color: antiquewhite;
+}
+.datacontainer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.datacontainer div {
+    display: flex;
+    flex-direction: column;
+    line-height: 0%;
+    background-color: #DD660A;
+    width: 68px;
+    align-items: center;
+}
+.datacontainer div p{
+    font-size: 2vh;
+    font-weight: 400;
+}
+.datacontainer div h1{
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+/*Botões*/
+#participante, #ouvinte, #programacao{
     background-color: #EF9A36;
     border-style: none;
     width: fit-content;
