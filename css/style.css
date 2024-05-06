@@ -229,6 +229,10 @@ h1 {
   .desktop-nav {
     display: none;
   }
+  .imagem{
+    width: 100%;
+    background-image:url(../assets/images/fatec-marilia.jpg);
+  }
   
   /* Estilos para PCs */
   @media (min-width: 768px) {
